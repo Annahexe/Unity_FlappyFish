@@ -4,10 +4,11 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public GameObject canvasGameOver;
+    public GameObject canvasGameStart;
 
     void Start()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 0;
     }
 
     public void gameOver() { 
@@ -17,5 +18,16 @@ public class SceneController : MonoBehaviour
 
     public void gameReset() {
         SceneManager.LoadScene(0);
+    }
+
+    public void gameStart()
+    {
+        canvasGameStart.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void gameQuit()
+    {
+        Application.Quit();
     }
 }
