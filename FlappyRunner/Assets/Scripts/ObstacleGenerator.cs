@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ObstacleGenerator : MonoBehaviour
 {
-    public float timeMax = 1;
+    public float timeMax = 1.2f;
     private float timeInit = 0;
     public GameObject obstacle;
     public GameObject obstacleOrigin;
