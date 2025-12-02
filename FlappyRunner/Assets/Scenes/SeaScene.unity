@@ -1579,8 +1579,8 @@ GameObject:
   - component: {fileID: 1127950128}
   - component: {fileID: 1127950127}
   - component: {fileID: 1127950129}
-  - component: {fileID: 1127950130}
   - component: {fileID: 1127950131}
+  - component: {fileID: 1127950132}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1739,28 +1739,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   sceneController: {fileID: 646691693}
   velocity: 1
---- !u!95 &1127950130
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127950124}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ecbe1713ac4af7040bb84165c76928c6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1127950131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1773,12 +1751,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a087670b0fcde0e43a28b27ec3543d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSkinManager
-  animator: {fileID: 1127950130}
-  defaultFlyClip: {fileID: 7400000, guid: 7867f7e09f90aeb4d92749aa1b4f7b71, type: 2}
+  animator: {fileID: 1127950132}
+  defaultFlyClip: {fileID: 7400000, guid: e9457a41449d4184d8d01a0afa715ef4, type: 2}
   skinFlyClips:
-  - {fileID: 7400000, guid: 7867f7e09f90aeb4d92749aa1b4f7b71, type: 2}
+  - {fileID: 7400000, guid: e9457a41449d4184d8d01a0afa715ef4, type: 2}
   - {fileID: 7400000, guid: 739414b3db936d946a1abc213c9715df, type: 2}
   - {fileID: 7400000, guid: f21156b13fae1d34490e38874748ac62, type: 2}
+--- !u!95 &1127950132
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127950124}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b5b8667c8104714cbcceeea1bf09cfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1206739066
 GameObject:
   m_ObjectHideFlags: 0
