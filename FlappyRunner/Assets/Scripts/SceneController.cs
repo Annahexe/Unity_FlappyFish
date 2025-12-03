@@ -17,7 +17,7 @@ public class SceneController : MonoBehaviour
     }
 
     public void gameReset() {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void gameStart()
