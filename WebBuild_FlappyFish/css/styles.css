@@ -51,27 +51,28 @@ body::after{
   pointer-events: none;
 
   background:
-    repeating-linear-gradient(
-      115deg,
-      rgba(190,255,255,0.10) 0 10px,
-      rgba(190,255,255,0.00) 12px 40px
-    ),
-    radial-gradient(600px 420px at 30% 30%, rgba(255,255,255,0.20), transparent 60%),
-    radial-gradient(520px 380px at 70% 40%, rgba(140,220,255,0.16), transparent 62%),
-    repeating-radial-gradient(circle at 40% 60%,
-      rgba(255,255,255,0.16) 0 7px,
-      rgba(255,255,255,0.00) 9px 26px);
+    radial-gradient(700px 520px at 25% 30%, rgba(255,255,255,0.18), transparent 60%),
+    radial-gradient(620px 460px at 75% 40%, rgba(170,240,255,0.14), transparent 62%),
+
+    repeating-radial-gradient(circle at 20% 55%,
+      rgba(255,255,255,0.14) 0 6px,
+      rgba(255,255,255,0.00) 8px 26px),
+
+    repeating-radial-gradient(circle at 70% 65%,
+      rgba(210,255,255,0.10) 0 5px,
+      rgba(255,255,255,0.00) 7px 24px);
 
   mix-blend-mode: screen;
-  opacity: 0.55;
-  filter: blur(10px);
-  animation: waterMove 7s ease-in-out infinite;
+  opacity: 0.2;
+  filter: url(#waterRipples) blur(5px) contrast(1.25);
+  transform: translate3d(0,0,0);
+  animation: rippleDrift 6.5s ease-in-out infinite;
 }
 
-@keyframes waterMove{
-  0%   { transform: translate(-2.8%,  1.4%) scale(1.03) rotate(-1deg); }
-  50%  { transform: translate( 2.4%, -1.2%) scale(1.06) rotate( 1deg); }
-  100% { transform: translate(-2.8%,  1.4%) scale(1.03) rotate(-1deg); }
+@keyframes rippleDrift{
+  0%   { transform: translate(-2.2%,  1.2%) scale(1.03) rotate(-0.6deg); }
+  50%  { transform: translate( 2.0%, -1.0%) scale(1.06) rotate( 0.6deg); }
+  100% { transform: translate(-2.2%,  1.2%) scale(1.03) rotate(-0.6deg); }
 }
 
 /* =========================================================
