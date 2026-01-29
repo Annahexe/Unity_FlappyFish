@@ -219,3 +219,9 @@ body::after{
   right: 10px;
 }
 
+#unity-container.unity-mobile{
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  inset: auto !important;
+}
