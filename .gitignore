@@ -78,3 +78,9 @@ ServerData/
 
 # === Crash / Debug ===
 crashlytics-build.properties
+
+# --- Allow GitHub Pages WebGL build ---
+!docs/
+!docs/index.html
+!docs/Build/
+!docs/Build/**
