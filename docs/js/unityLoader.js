@@ -24,13 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
     updateBannerVisibility();
   }
 
-  const loaderUrl = `../Build/WebBuild.loader.js`;
+  const buildUrl = "Build";
+  const loaderUrl = `${buildUrl}/WebBuild.loader.js`;
 
   const config = {
     arguments: [],
-    dataUrl: `../Build/WebBuild.data`,
-    frameworkUrl: `../Build/WebBuild.framework.js`,
-    codeUrl: `../Build/WebBuild.wasm`,
+    dataUrl: `${buildUrl}/WebBuild.data`,
+    frameworkUrl: `${buildUrl}/WebBuild.framework.js`,
+    codeUrl: `${buildUrl}/WebBuild.wasm`,
     streamingAssetsUrl: "StreamingAssets",
     companyName: "AnnamariaMarino",
     productName: "FlappyFish",
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     config.devicePixelRatio = Math.min(2, window.devicePixelRatio || 1);
   }
 
-  canvas.style.background = `url('../Build/WebBuild.jpg') center / cover`;
+  canvas.style.background = `url('${buildUrl}/WebBuild.jpg') center / cover`;
   document.querySelector("#unity-loading-bar").style.display = "block";
 
   const script = document.createElement("script");
