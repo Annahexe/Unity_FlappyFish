@@ -1,7 +1,9 @@
 # 🎏 Unity Flappy Fish
 
 <p align="center">
+  <a href="https://annahexe.github.io/Unity_FlappyFish/" target="_blank">
   <img src="https://res.cloudinary.com/dwm2oprta/image/upload/v1769726630/flappyFish_cover_jutobe.png" alt="Flappy Fish cover" />
+  </a>
 </p>
 
 Welcome to **Flappy Fish** — a Unity study project inspired by the classic *Flappy Bird* gameplay. Navigate your fish through obstacles and aim for the highest score!  
@@ -31,12 +33,16 @@ You can play the WebGL build of **Flappy Fish** here:
 
 ## 🧩 Project Structure
 
-| Folder | Description |
-|--------|-------------|
-| `Assets` | All Unity assets: scenes, scripts, sprites |
-| `FlappyRunner` | Core gameplay components |
-| `WebBuild_FlappyFish` | WebGL build ready for GitHub Pages |
-| `.gitignore`, `.gitattributes` | Repo setup |
+| Folder / File | Description |
+|---------------|-------------|
+| `Build/` | Compiled Unity WebGL build files (`.wasm`, `.data`, `.js`) |
+| `TemplateData/` | Unity WebGL template assets (styles, loading screen, icons) |
+| `css/` | Custom CSS for the WebGL page (mobile and layout fixes) |
+| `js/` | JavaScript files for Unity loading and initialization |
+| `FlappyFish_UnityProject/FlappyRunner/` | Unity project folder containing scenes, scripts, and game logic |
+| `index.html` | Entry point for the WebGL game |
+| `.gitignore` | Git ignore |
+| `README.md` | Project documentation |
 
 ---
 
